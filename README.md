@@ -23,7 +23,7 @@ https://docs.docker.com/desktop/windows/install/
 
 ## Image Configuration (enviromental variables)
 
-> dotnet will load all configuration settings like appsettings.json and properties/lounchsettings.json into the DI container. Any of the keys can be overridden in the Dockerfile to enable config at running a container like -e "APP_NAME=XYZ Cooperative"
+> dotnet will load all configuration settings like appsettings.json and properties/lounchsettings.json into the DI container. Any of the keys can be overridden in the Dockerfile to enable config at running a container like `-e "APP_NAME=XYZ Cooperative"`
 
 As seen below;
 ```cs
@@ -40,6 +40,10 @@ var configuration = new ConfigurationBuilder()
 1. https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-6.0
 1. https://stackoverflow.com/questions/68506243/read-docker-compose-environment-variable-from-asp-net-core-controller
 
+
+## Docker Compose
+
+> Use to store docker run commands and parameters for one or multiple related (solution) image(s). Suitable for running microservice ecosystem.
 
 ## Tips
     1. Visual studio projects build command from solution folder:
